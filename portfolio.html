@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студія</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css ">   
+<link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <!--шапка-->
+    <header class="page-header">
+        <div class="container header-container">
+        <nav class="page-header__nav">
+        <a href="./index.html" class="logo"><span class="logo__text">Web</span>Studio</a>
+        <ul class="site-nav__list list">
+            <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студія</a></li>
+            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a></li>
+            <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
+        </ul>
+    </nav>
+        <ul class="auth-nav__list list">
+            <li class="auth-nav__item">   
+            <a href="mailto:info@devstudio.com" class="auth-nav__link">
+                <svg class="auth-nav__icon" width="16px" height="12px">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>info@devstudio.com</a></li>
+            <li class="auth-nav__item">
+                <a href="tel:+380961111111" class="auth-nav__link">
+                <svg class="auth-nav__icon" width="10px" height="16px">
+                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                    </svg>+38 096 111 11 11</a></li>
+        </ul>
+    </div>
+     </header>
+     <main>
+        <section class="section-portfolio">
+        <div class="container">
+          <h1 class="visually-hidden">наші проекти</h1>
+          <ul class="portfolio-filters__list list">
+            <li class="portfolio-filters__item"><button type="button" class="button portfolio-filters__button">Усі</button></li>
+            <li class="portfolio-filters__item"><button type="button" class="button portfolio-filters__button">Веб-сайти</button></li>
+            <li class="portfolio-filters__item"><button type="button" class="button portfolio-filters__button">Додатки</button></li>
+            <li class="portfolio-filters__item"><button type="button" class="button portfolio-filters__button">Дизайн</button></li>
+            <li class="portfolio-filters__item"><button type="button" class="button portfolio-filters__button">Маркетинг</button></li>
+        </ul>
+        <!-- наші роботи-->
+            <ul class="card-set__list list">
+                <li class="card-set__item">
+                    <a href="" class="card-set__link">
+                    <div class="product-thumb">
+                    <img src="./images/технокряк.jpg" class="product-thumb__item" width="370" alt="Ноутбук">
+                    <p class="product-thumb__overlay">Ресурс пропонує комплексні 
+                        пропозиції з різним рівнем функціоналу та сервісів.
+                         Все це дозволить відвідувачу отримати вичерпні
+                          відомості про компанію чи приватну особу.</p>
+                    </div>
+                    <div class="product-thumb__meta">
+                        <h2 class="product-thumb__title">Технокряк</h2>
+                        <p class="product-thumb__text">Веб-сайт</p>
+                    </div>
+                </a>
+                </li>
+                <li class="card-set__item">
+                    <a href="" class="card-set__link">
+                    <div class="product-thumb">
+                    <img src="./images/Orleans.jpg" class="product-thumb__item" width="370" alt="чоловіки грають в баскетбол">
+                    <p class="product-thumb__overlay">Ресурс пропонує комплексні 
+                        пропозиції з різним рівнем функціоналу та сервісів.
+                         Все це дозволить відвідувачу отримати вичерпні
+                          відомості про компанію чи приватну особу.</p>
+                    </div>
+                    <div class="product-thumb__meta" >
+                        <h2 class="product-thumb__title">Постер New Orlean vs Golden Star</h2>
+                    <p class="product-thumb__text">Дизайн</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="card-set__item">
+                    <a href="" class="card-set__link">
+                    <div class="product-thumb">
+                    <img src="./images/seafood.jpg" class="product-thumb__item" width="370" alt="логотип ресторану">
+                    <p class="product-thumb__overlay">Ресурс пропонує комплексні 
+                        пропозиції з різним рівнем функціоналу та сервісів.
+                         Все це дозволить відвідувачу отримати вичерпні
+                          відомості про компанію чи приватну особу.</p>
+                    </div>
+                    <div class="product-thumb__meta">
+                        <h2 class="product-thumb__title">Ресторан Seafood</h2>
+                        <p class="product-thumb__text">Додаток</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="card-set__item">
+                    <a href="" class="card-set__link">
+                    <div class="product-thumb">
+                    <img src="./images/headphon.jpg" class="product-thumb__item" width="370" alt="навушники">
+                    <p class="product-thumb__overlay">Ресурс пропонує комплексні 
+                        пропозиції з різним рівнем функціоналу та сервісів.
+                         Все це дозволить відвідувачу отримати вичерпні
+                          відомості про компанію чи приватну особу.</p>
+                    </div>
+                    <div class="product-thumb__meta">
+                        <h2 class="product-thumb__title">Проєкт Prime</h2>
+                        <p class="product-thumb__text">Маркетинг</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="card-set__item">
+                    <a href="" class="card-set__link">
+                     <div class="product-thumb">
+                    <img src="./images/box.jpg" class="product-thumb__item" width="370" alt="дві коробки">
+                    <p class="product-thumb__overlay">Ресурс пропонує комплексні 
+                        пропозиції з різним рівнем функціоналу та сервісів.
+                         Все це дозволить відвідувачу отримати вичерпні
+                          відомості про компанію чи приватну особу.</p>
+                    </div>
+                    <div class="product-thumb__meta">
+                        <h2 class="product-thumb__title">Проєкт Boxes</h2>
+                        <p class="product-thumb__text">Додаток</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="card-set__item">
+                    <a href="" class="card-set__link">
+                    <div class="product-thumb">
+                    <img src="./images/comp.jpg" class="product-thumb__item" width="370" alt="монітор">
+                    <p class="product-thumb__overlay">Ресурс пропонує комплексні 
+                        пропозиції з різним рівнем функціоналу та сервісів.
+                         Все це дозволить відвідувачу отримати вичерпні
+                          відомості про компанію чи приватну особу.</p>
+                    </div>
+                    <div class="product-thumb__meta">
+                        <h2 class="product-thumb__title">Inspiration has no Borders</h2>
+                        <p class="product-thumb__text" >Вебсайт</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="card-set__item">
+                    <a href="" class="card-set__link">
+                    <div class="product-thumb">
+                    <img src="./images/book.jpg" class="product-thumb__item" width="370" alt="книга">
+                    <p class="product-thumb__overlay">Ресурс пропонує комплексні 
+                        пропозиції з різним рівнем функціоналу та сервісів.
+                         Все це дозволить відвідувачу отримати вичерпні
+                          відомості про компанію чи приватну особу.</p>
+                    </div>
+                    <div class="product-thumb__meta">
+                        <h2 class="product-thumb__title">Видання Limited Edition</h2>
+                        <p class="product-thumb__text">Дизайн</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="card-set__item">
+                    <a href="" class="card-set__link">
+                    <div class="product-thumb">
+                    <img src="./images/label.jpg" class="product-thumb__item" width="370" alt="логотип">
+                    <p class="product-thumb__overlay">Ресурс пропонує комплексні 
+                        пропозиції з різним рівнем функціоналу та сервісів.
+                         Все це дозволить відвідувачу отримати вичерпні
+                          відомості про компанію чи приватну особу.</p>
+                    </div>
+                    <div class="product-thumb__meta">
+                        <h2 class="product-thumb__title">Проєкт LAB</h2>
+                        <p class="product-thumb__text">Маркетинг</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="card-set__item">
+                    <a href="" class="card-set__link">
+                    <div class="product-thumb">
+                    <img src="./images/laptop.jpg" class="product-thumb__item" width="370" alt="людина працює з ноутбуком">
+                    <p class="product-thumb__overlay">Ресурс пропонує комплексні 
+                        пропозиції з різним рівнем функціоналу та сервісів.
+                         Все це дозволить відвідувачу отримати вичерпні
+                          відомості про компанію чи приватну особу.</p>
+                    </div>
+                    <div class="product-thumb__meta">
+                        <h2 class="product-thumb__title">Growing Business</h2>
+                        <p class="product-thumb__text">Додаток</p>
+                    </div>
+                    </a>
+                </li>
+            </ul>
+        </div> 
+        </section>
+     </main>
+     <footer class="page-footer">
+        <div class="container">
+        <div>
+        <a href="./index.html" class="logo page-footer__logo"><span class="logo__text">Web</span>Studio</a>
+        <address>
+            <ul class="address-nav__list list">
+                <li class="address-nav__item"><a href="https://goo.gl/maps/8p7UmijSQz6goDwR9" class="address-nav__link--map" target="_blank" rel="noreferrer noopener">м. Київ, пр-т Лесі Українки, 26</a></li>
+                <li class="address-nav__item"><a href="mailto:info@devstudio.com" class="address-nav__link">info@devstudio.com</a></li>
+                <li class="address-nav__item"><a href="tel:+380961111111" class="address-nav__link">+38 096 111 11 11</a></li>
+            </ul>
+        </address>
+    </div>
+        <div class="socials">
+            <p class="socials-title">ПРИЄДНУЙТЕСЬ</p>
+            <ul class="socials-list__list list">
+                <li class="socials-list__link socials-list__link--invers">
+                    <a href="#" class="socials-list__icon socials-list__icon--invers">
+                    <svg class="" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-instagram">
+                    </use>
+                    </svg></a></li>
+                <li class="socials-list__link socials-list__link--invers">
+                    <a href="#" class="socials-list__icon socials-list__icon--invers">
+                    <svg class="" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-twitter">
+                    </use>
+                    </svg></a></li>
+                <li class="socials-list__link socials-list__link--invers">
+                    <a href="#" class="socials-list__icon socials-list__icon--invers">
+                    <svg class="" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-facebook">
+                    </use>
+                    </svg></a></li>
+                <li class="socials-list__link socials-list__link--invers">
+                    <a href="#" class="socials-list__icon socials-list__icon--invers">
+                    <svg class="" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-linkedin">
+                    </use>
+                    </svg></a></li>
+            </ul>
+        </div>
+        <!--FORM -->
+    <form class="footer-form">
+        <div class="footer-form__field">
+        <label class="footer-form__label" for="mail">підпишиться на розсилку</label>
+        <input class="footer-form__input" type="email" name="mail" id="mail" placeholder="E-mail">
+        </div>
+        <button class="button footer-form__button" type="submit">
+            <span class=""> підписатися</span>
+            <svg class="footer-form__button--icon" width="24px" height="24px">
+                <use href="./images/symbol-defs.svg#icon-icon-send">
+                </use>
+                </svg>
+        </button>
+    </form>
+    </div>
+    </footer>
+</body>
+</html>

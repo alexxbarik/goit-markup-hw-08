@@ -1,0 +1,10 @@
+@mixin transition(){
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+}
+@mixin centeredflex(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

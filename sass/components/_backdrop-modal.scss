@@ -1,0 +1,212 @@
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    &.is-hidden{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.backdrop-modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background-color: $primary-bg-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+     0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+}
+
+.button-closed{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    @include centeredflex();
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: $primary-bg-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    &__icon{
+        width: 18px;
+        height: 18px;
+        fill: $primary-logo-color;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: var(--timing-function);
+    }
+    &__icon:hover,
+    &__icon:focus{
+fill: $prymary-accent-color;
+}
+}
+.forma{
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    &-title{
+        display: block;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+        color: $title-text-color;
+        }  
+}
+
+.forma-container{
+display: flex;
+flex-direction: column;
+}
+.forma-item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 448px;
+    margin-bottom: 10px;
+    &__title{
+        margin-bottom: 4px;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color:$primary-text-color;
+        }
+}
+
+.forma-item__input{
+    width: 448px;
+    height: 40px;
+    margin: 0;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+    &:focus-within{
+        border: 1px solid $prymary-accent-color;
+        outline: none;
+    }
+    &:focus-within ~ .page-modal__icon{
+        fill: $prymary-accent-color;
+    }
+}
+.forma-item__input--text{
+    width: 448px;
+    height: 120px;
+    margin: 0;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+    &:focus-within{
+        border: 1px solid $prymary-accent-color;
+        outline: none;
+    }
+    &::placeholder{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+        }
+}
+
+
+.forma-item__icon{
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+}
+
+.forma-item__comment{
+    width: 448px;
+    height: 138px;
+    margin-bottom: 20px;
+}
+
+
+.forma-item__box{
+    @include centeredflex();
+    width: 100%;
+    margin-bottom: 30px;
+}
+.forma-item__input--box{
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.forma-item__title--box{
+display: flex;
+align-items: center;
+margin-bottom: 0;
+font-size: 14px;
+line-height: 1.71px;
+letter-spacing: 0.03em;
+    }
+.forma-item__icon--box{
+    position: static;
+    display: inline-block;
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $title-text-color;
+    border-radius: 2px;
+}
+.forma-item__input--box:checked + .forma-item__icon--box{
+    background-color: $prymary-accent-color;
+    border-color: $prymary-accent-color;
+    background-size: contain;
+    background-origin: border-box;
+}
+.forma-item__link{
+    display: inline-block;
+    color: $prymary-accent-color;
+    padding: 0;
+    margin: 0;
+}
+.forma-modal__button{
+    @include centeredflex();
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 52px 10px 52px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    &--text{
+        color:$primary-bg-color;
+    }
+    &:hover,
+    &:focus{
+    background-color:$button-bgc-hover-color;
+}
+}

@@ -1,0 +1,195 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $hero-bg-color;
+    }
+    .page-footer .container{
+    outline: 1px solid violet;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+      }
+    }
+
+    
+    .address-nav__list{
+    @extend %list;
+    width: 231px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        margin-left: 76px;
+        margin-right: 0;
+       }
+       @media screen and (min-width: 1200px) {
+        margin: 0;
+       }
+
+    }
+    .address-nav__item{
+    margin-bottom: 9px;
+    text-align: center;
+    &:nth-last-child(1){
+        margin-bottom: 0;
+        }
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+           }
+    }
+    
+    
+    .address-nav__link {
+    text-decoration: none;
+    color:$secondary-link-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    @include transition();
+    &:hover, 
+    &:focus{
+    color: $prymary-accent-color;
+    }
+    }
+  
+    .address-nav__link--map {
+    text-decoration: none;
+    color:$primary-bg-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    }
+    .socials{
+    margin-bottom: 60px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+       margin-bottom: 0;
+       margin-top: 5px;
+       margin-left: 165px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+        margin-bottom: 0;
+        text-align: start;
+       }
+     }
+    
+
+    .socials-title{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $head-title-color;
+    }
+    .socials-list__list{
+        @include centeredflex();
+        @extend %list;
+   
+    }
+    
+    .socials-list__link--invers:nth-last-child(1){
+        margin-right: 0;
+    }
+    .socials-list__icon--invers{
+        background-color: rgba(255, 255, 255, 0.1);
+        fill: $head-title-color;
+        &:hover,
+        &:focus{
+            background-color: $prymary-accent-color;
+        }   
+    }
+
+    /* FORM */
+    .footer-form{
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    width: 570px;
+    margin-left: 93px;
+    margin-right: 0;
+    align-items: flex-end;
+    }
+    }
+    
+    .footer-form__field{
+    width: 100%;
+    background-color: $hero-bg-color;
+    color: $secondary-link-color;
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+    }
+    }
+    
+    .footer-form__label{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-bg-color;
+    @media screen and (min-width: 1200px) {
+    text-align: start;  
+    }
+    }
+    
+    .footer-form__input{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 0;
+    background-color: $hero-bg-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: $head-title-color;
+    &::placeholder{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: $secondary-link-color;
+        }
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 0;  
+    }
+    }
+    
+   
+    .footer-form__button{
+    @include centeredflex();
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    height: 50px;
+    color:$head-title-color;
+    @media screen and (min-width: 1200px) {
+    margin-left: 12px;  
+    }
+    }
+    
+    .footer-form__button--icon{
+    margin-left: 10px;
+    fill: $head-title-color;
+    }
