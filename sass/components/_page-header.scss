@@ -22,13 +22,13 @@
         border: none;
         background-color: transparent;
     }
-    .menu-button .icon-close{
+    .menu-button .close-menu{
         display: none;
     }
-    .menu-button.is-open .icon-close{
+    .menu-button.is-open .close-menu{
         display: block;
     }
-    .menu-button.is-open .icon-menu{
+    .menu-button.is-open .open-menu{
         display: none;
     }
     .menu-container{

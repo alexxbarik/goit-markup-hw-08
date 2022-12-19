@@ -132,15 +132,15 @@ body {
   background-color: transparent;
 }
 
-.menu-button .icon-close {
+.menu-button .close-menu {
   display: none;
 }
 
-.menu-button.is-open .icon-close {
+.menu-button.is-open .close-menu {
   display: block;
 }
 
-.menu-button.is-open .icon-menu {
+.menu-button.is-open .open-menu {
   display: none;
 }
 
@@ -1084,24 +1084,41 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  padding: 93px 15px 94px 15px;
+  overflow-y: scroll;
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
+@media screen and (min-width: 768px) {
+  .backdrop {
+    padding: 208px 159px 207px 159px;
+  }
+}
 
 .backdrop-modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .backdrop-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .backdrop-modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .button-closed {
@@ -1152,9 +1169,14 @@ body {
   font-family: "Roboto", "Sans-serif";
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .forma-title {
+    line-height: 1.15;
+  }
 }
 
 .forma-container {
@@ -1176,7 +1198,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  width: 448px;
+  width: 100%;
   margin-bottom: 10px;
 }
 .forma-item__title {
@@ -1188,7 +1210,7 @@ body {
 }
 
 .forma-item__input {
-  width: 448px;
+  width: 100% px;
   height: 40px;
   margin: 0;
   padding-left: 42px;
@@ -1210,7 +1232,7 @@ body {
 }
 
 .forma-item__input--text {
-  width: 448px;
+  width: 100%;
   height: 120px;
   margin: 0;
   padding: 12px 16px;
@@ -1279,7 +1301,7 @@ body {
 }
 
 .forma-item__comment {
-  width: 448px;
+  width: 100%;
   height: 138px;
   margin-bottom: 20px;
 }
@@ -1320,9 +1342,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0;
-  font-size: 14px;
-  line-height: 1.71px;
+  font-size: 12px;
+  line-height: 1.17px;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .forma-item__title--box {
+    font-size: 14px;
+  }
 }
 
 .forma-item__icon--box {
