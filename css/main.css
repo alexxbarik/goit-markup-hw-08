@@ -95,7 +95,7 @@ body {
   position: relative;
 }
 
-/* Main NAV (page-header__nav)*/
+/* MAIN NAV (page-header__nav)*/
 .page-header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,7 +108,15 @@ body {
           justify-content: space-between;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .page-header__nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 
+/* КНОПКА МЕНЮ МІБІЛЬНОГО ТЕЛ*/
 .menu-btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -154,6 +162,7 @@ body {
   display: none;
 }
 
+/* ВИПАДАЮЧЕ МЕНЮ МІБІЛЬНОГО ТЕЛ*/
 .menu-container {
   background-color: #FFFFFF;
   padding: 48px 83px 48px 40px;
@@ -187,15 +196,7 @@ body {
   width: 100%;
 }
 
-.navigation {
-  outline: 1px solid teal;
-}
-
-.contacts {
-  outline: 1px solid orange;
-}
-
-/* site-nav*/
+/* SITE-NAV*/
 .site-nav__list {
   padding-bottom: 306px;
 }
@@ -207,6 +208,12 @@ body {
     padding-bottom: 0;
     margin-left: 88px;
     margin-right: 90px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-nav__list {
+    margin-left: 93px;
+    margin-right: 305px;
   }
 }
 
@@ -263,7 +270,7 @@ body {
 }
 
 .site-nav__link--current::after {
-  display: block;
+  display: none;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -273,8 +280,13 @@ body {
   border-radius: 2px;
   background-color: #2196F3;
 }
+@media screen and (min-width: 768px) {
+  .site-nav__link--current::after {
+    display: block;
+  }
+}
 
-/* auth-nav */
+/* AUTH-NAV */
 @media screen and (min-width: 768px) {
   .auth-nav__list {
     display: -webkit-box;
@@ -284,6 +296,14 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -302,6 +322,11 @@ body {
   }
   .auth-nav__item:last-child {
     margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav__item:last-child {
+    margin-bottom: 0px;
   }
 }
 
@@ -326,6 +351,25 @@ body {
             align-items: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .auth-nav__link--tel {
+    margin-right: 40px;
+    font-size: 14px;
+    line-height: 1.14;
+    -webkit-transition-property: fill;
+    transition-property: fill;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: var(--timing-function);
+            transition-timing-function: var(--timing-function);
+  }
+  .auth-nav__link--tel:hover, .auth-nav__link--tel:focus {
+    color: #2196F3;
+    fill: #2196F3;
+  }
+}
 
 .auth-nav__link--mail {
   text-decoration: none;
@@ -348,6 +392,24 @@ body {
             align-items: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .auth-nav__link--mail {
+    font-size: 14px;
+    line-height: 1.14;
+    -webkit-transition-property: fill;
+    transition-property: fill;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: var(--timing-function);
+            transition-timing-function: var(--timing-function);
+  }
+  .auth-nav__link--mail:hover, .auth-nav__link--mail:focus {
+    color: #2196F3;
+    fill: #2196F3;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .auth-nav__icon {
@@ -359,12 +421,22 @@ body {
     margin-right: 8px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .auth-nav__icon {
+    -webkit-transition-property: fill;
+    transition-property: fill;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: var(--timing-function);
+            transition-timing-function: var(--timing-function);
+  }
+}
 
+/* SOC-NAV */
 .soc-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .soc-nav__list {
