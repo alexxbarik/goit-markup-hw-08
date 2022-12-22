@@ -165,7 +165,9 @@ body {
 /* ВИПАДАЮЧЕ МЕНЮ МІБІЛЬНОГО ТЕЛ*/
 .menu-container {
   background-color: #FFFFFF;
-  padding: 48px 83px 48px 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
 }
 @media screen and (max-width: 767px) {
   .menu-container {
@@ -437,6 +439,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .soc-nav__list {
