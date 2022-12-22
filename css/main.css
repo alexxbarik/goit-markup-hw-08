@@ -1603,22 +1603,26 @@ body {
 
 /* ПОРТФОЛІО */
 .section-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .portfolio-filters__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 336px;
+  margin: -8px;
 }
 
-.portfolio-filters__item + .portfolio-filters__item {
+.portfolio-filters__item {
   margin-left: 8px;
+  margin-bottom: 15px;
+}
+.portfolio-filters__item:nth-last-child(-n+2) {
+  margin-bottom: 0;
 }
 
 /* кнопки */

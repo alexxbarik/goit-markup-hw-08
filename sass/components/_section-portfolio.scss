@@ -1,17 +1,30 @@
 /* ПОРТФОЛІО */
 .section-portfolio{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .portfolio-filters__list {
     @extend %list;
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    max-width: 336px;
+    margin: -8px;
+    
+    // justify-content: center;
+    // margin-bottom: 50px;
     }
-    .portfolio-filters__item + .portfolio-filters__item {
-    margin-left: 8px;    
+    .portfolio-filters__item{
+        margin-left: 8px;
+        margin-bottom: 15px;
+        &:nth-last-child(-n + 2) {
+           margin-bottom: 0; 
+          }
     }
+    // .portfolio-filters__item + .portfolio-filters__item {
+    // margin-left: 8px;    
+    // }
     /* кнопки */
     .portfolio-filters__button {
     padding: 6px 22px;
