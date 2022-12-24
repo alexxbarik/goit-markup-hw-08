@@ -25,19 +25,46 @@
     }
   
     .overlay{
-    max-width: 1600px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient( to right, 
      rgba(47, 48, 58, 0.4), 
-     rgba(47, 48, 58, 0.4)), url(../images/hero\ img\ .jpg);
+     rgba(47, 48, 58, 0.4)), url("/images/Header_bg_tel\ img\ .jpg");
+     @include retina{
+        background-image: linear-gradient( to right, 
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)), url("/images/Header_bg_tel_2ximg\ .jpg");
+     }
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
     background-color: $primary-text-color;
+    @media screen and (min-width: 768px){
+        min-width: 768px;
+        background-image: linear-gradient( to right, 
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)), url("/images/Header_bg_tab\ img\ .jpg");
+        @include retina{
+            background-image: linear-gradient( to right, 
+            rgba(47, 48, 58, 0.4), 
+            rgba(47, 48, 58, 0.4)), url("/images/Header_bg_tab_2x\ img\ .jpg");   
+        }    
     }
-    
+    @media screen and (min-width: 1200px){
+        max-width: 1600px;
+        background-image: linear-gradient( to right, 
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)), url("/images/header_bg_desktop\ img\ .jpg");
+        @include retina{
+            background-image: linear-gradient( to right, 
+            rgba(47, 48, 58, 0.4), 
+            rgba(47, 48, 58, 0.4)), url("/images/header_bg_desktop_2xImg\ .jpg");    
+        }    
+    }
+    }
+    // url(../images/hero\ img\ .jpg)
 
 /* hero button*/
 .button {
