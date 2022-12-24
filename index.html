@@ -135,9 +135,18 @@
         <h2 class="section-team__title">Наша команда</h2>
         <ul class="team-list__list list"> 
             <li class="team-list__item">
-                <img 
-                srcset="./images/img-section-our-team-pd.jpg 1x"
-                src="./images/img-section-our-team-pd.jpg" class="team-list__label" width="270" alt="чоловік в окулярах">
+                <picture>
+                    <source 
+                    srcset="./images/img1-igor-mobile.jpg 1x, ./images/img1-igor-mobile2x.jpg 2x" 
+                    media="(max-width: 767px)" sizes="(min-width: 480px) 480px 100vw">
+                    <source 
+                    srcset="./images/img1-igor-tablet.jpg 1x, ./images/img1-igor-tablet2x.jpg 2x" 
+                    media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 768px 50vw">
+                    <source 
+                    srcset="./images/img1-igor-desktop.jpg 1x, ./images/img1-igor-desktop2x.jpg 2x" 
+                    media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px 25vw">
+                <img src="./images/img1-igor.jpg" class="team-list__label" width="270" alt="чоловік в окулярах">
+                </picture>
                 <div class="team-list__wrapper">
                 <h3 class="team-list__title">Ігор Дем'яненко</h3>
                 <p class="team-list__text">Product Designer</p>
