@@ -258,7 +258,18 @@
                 <li class="card-set__item">
                     <a href="" class="card-set__link">
                     <div class="product-thumb">
-                    <img src="./images/label.jpg" class="product-thumb__item" width="370" alt="логотип">
+                    <picture>
+                        <source 
+                        srcset="./images/label-mobile.jpg 1x, ./images/label-mobile2x.jpg 2x" 
+                        media="(max-width: 767px)" sizes="(min-width: 480px) 480px 100vw">
+                        <source 
+                        srcset="./images/label-tablet.jpg 1x, ./images/label-tablet2x.jpg 2x" 
+                        media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 768px 50vw">
+                        <source 
+                        srcset="./images/label.jpg 1x, ./images/label-desktop2x.jpg 2x" 
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px 33vw">    
+                    <img src="./images/label.jpg" class="product-thumb__item" alt="логотип">
+                    </picture>
                     <p class="product-thumb__overlay">Ресурс пропонує комплексні 
                         пропозиції з різним рівнем функціоналу та сервісів.
                          Все це дозволить відвідувачу отримати вичерпні
@@ -273,7 +284,18 @@
                 <li class="card-set__item">
                     <a href="" class="card-set__link">
                     <div class="product-thumb">
-                    <img src="./images/laptop.jpg" class="product-thumb__item" width="370" alt="людина працює з ноутбуком">
+                    <picture>
+                        <source 
+                        srcset="./images/laptop-mobile.jpg 1x, ./images/laptop-mobile2x.jpg 2x" 
+                        media="(max-width: 767px)" sizes="(min-width: 480px) 480px 100vw">
+                        <source 
+                        srcset="./images/laptop-tablet.jpg 1x, ./images/laptop-tablet2x.jpg 2x" 
+                        media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 768px 50vw">
+                        <source 
+                        srcset="./images/laptop.jpg 1x, ./images/laptop-desktop2x.jpg 2x" 
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px 33vw">      
+                    <img src="./images/laptop.jpg" class="product-thumb__item" alt="людина працює з ноутбуком">
+                    </picture>
                     <p class="product-thumb__overlay">Ресурс пропонує комплексні 
                         пропозиції з різним рівнем функціоналу та сервісів.
                          Все це дозволить відвідувачу отримати вичерпні
