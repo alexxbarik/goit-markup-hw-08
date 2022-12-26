@@ -57,7 +57,8 @@ display: none;
     background-color: $head-title-color;
     padding-top: 48px;
     padding-bottom: 48px;
-    padding-left: 40px;
+    padding-left: 40px; 
+    // outline: 1px solid red;
     @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
@@ -66,6 +67,10 @@ display: none;
     width: 100%;
     &.is-open{
     display: block;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
     z-index: 1;
     }
     } 
@@ -77,15 +82,16 @@ display: none;
     }
 
 .navigation, .contacts{
-height: 100%;
-width: 100%;    
+
+width: 100%;
 }
+
 
     /* SITE-NAV*/
     
 .site-nav__list {
 @extend%list;
-padding-bottom: 306px;
+// padding-bottom: 306px;
 @media screen and (min-width: 768px) {
 display: flex;
 padding-bottom: 0;
